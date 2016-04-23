@@ -1,0 +1,114 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>Online Registration Form</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link href='https://fonts.googleapis.com/css?family=Roboto:400,300,500|Raleway:400,900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css">
+  </head>
+
+  <body>
+
+    <header id="topbar">
+      <div class="container txtcenter">
+        <h1>The Code Review</h1>
+      </div>
+    </header>
+
+    <main>
+      <div class="container">
+        <div class="window">
+
+          <div class="frame">
+            <div class="icon-close"><i class="fa fa-times" aria-hidden="true"></i></div>
+            <div class="icon-mini"><i class="fa fa-minus" aria-hidden="true"></i></div>
+            <div class="icon-max"><i class="fa fa-sort" aria-hidden="true"></i></div>
+          </div>
+
+          <header class="txtcenter">
+            <h2>Signup for our newsletter</h2>
+            <p>Get the latest news on how your code is doing right in your inbox
+          </header>
+
+          <form action="index.html" method="post">
+            <fieldset id="login-info">
+              <legend>Login Information</legend>
+
+              <label for="username">Username</label>
+              <input type="text" id="username" placeholder="Choose a Username" name="user_username" required>
+
+              <label for="password">Password</label>
+              <input type="password" id="password" placeholder="Choose a password" name="user_password" required>
+
+              <label for="security">Security question</label>
+              <select id="security" name="user_questions">
+                <option value="">What is the name of your first pet?</option>
+                <option value="liverpool">What is your mother's maiden name?</option>
+                <option value="liverpool">What is your first primary school?</option>
+                <option value="liverpool">What is your first car?</option>
+              </select>
+
+              <label for="security_answer">Security question answer</label>
+              <input type="text" id="security_answer" placeholder="Your Answer to the question" name="user_anser">
+
+            </fieldset>
+            <fieldset id="contact-info">
+              <legend>Contact Information</legend>
+
+              <label for="fullname">Full Name</label>
+              <input type="text" id="fullname" placeholder="required" name="user_fullname" required>
+
+              <label for="email">Email Address</label>
+              <input type="email" id="email" placeholder="required" name="user_email" required>
+
+              <label for="tel">Phone Number</label>
+              <input type="tel" id="tel" placeholder="e.g. +(44) 803 308 1286" name="user_tel">
+
+              <label for="address">Street Address</label>
+              <input type="text" id="address" placeholder="Enter your First Line of your address" name="user_address">
+
+              <label for="city">City</label>
+              <input type="text" id="city" placeholder="Enter the name of your city." name="user_city">
+
+              <label for="state">State</label>
+              <select id="state" name="user_state">
+                <option value="london">London</option>
+                <option value="liverpool">Liverpool</option>
+              </select>
+
+              <label for="zip">Zip Code</label>
+              <input type="text" id="zip" placeholder="Enter your Zip Code" name="user_zip">
+            </fieldset>
+
+            <fieldset id="newsletter">
+              <legend>Newsletter</legend>
+
+              <label class="newsletter">Select the newsletters you would like to receive</label>
+
+              <input type="checkbox" id="html" value="newsletter_html" name="user_htmlNews"><label class="inlnbk" for="html">HTML News</label><br>
+              <input type="checkbox" id="css" value="newsletter_css" name="user_cssNews"><label class="inlnbk" for="css">CSS News</label><br>
+              <input type="checkbox" id="javascript" value="newsletter_javascript" name="user_javascriptNews"><label class="inlnbk" for="javascript">Javascript News</label><br>
+
+              <label class="newsletter-format">Newsletter format (Choose one)</label>
+              <input type="radio" id="html_format" value="html_format" name="user_news_format"><label class="inlnbk" for="html_format">HTML</label><br>
+              <input type="radio" id="text_format" value="html_format" name="user_news_format"><label class="inlnbk" for="text_format">Plain text</label>
+
+              <label class="other-topics">Other topics you'd like to hear about</label>
+              <textarea id="other_topics" name="user_other_topics" rows="10"></textarea>
+
+            </fieldset>
+
+            <div class="submit-button-area">
+              <button type="submit">Submit</button>
+            </div>
+            <div class="frame">
+              <div class=""><p>Copyright The Code Review</p></div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>
