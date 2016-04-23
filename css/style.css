@@ -61,7 +61,7 @@ select {
   border-radius: 5px;
   box-shadow: 0 1px 0 rgba(0,0,0,0.03) inset;
   margin-bottom: 30px;
-  transition: background-color 1s ease-in-out;
+  transition: background-color .5s ease-in-out;
 }
 
 input[type="radio"],
@@ -81,7 +81,8 @@ textarea:focus,
 select:focus {
   border-color: #c44d58;
   background: #fff;
-  transition: 1s ease-in-out;
+  box-shadow: 0 0 8px 1px rgba(196,77,88,0.4);
+  transition: .5s ease-in-out;
 }
 
 select {
