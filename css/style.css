@@ -236,6 +236,11 @@ main header h2 {
 
 /* Newsletter Body Rules --------------------*/
 
+#newsletter h3 {
+  font-weight: 500;
+  color: #38687F;
+}
+
 .newsletter-format,
 .other-topics {
   margin-top: 20px;
